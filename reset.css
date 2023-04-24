@@ -1,0 +1,90 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+header{
+
+    padding: 50px;
+    margin-top: 70px ;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+.monaicon{
+    width: 40px;
+    
+}
+
+#titulo{
+    margin: 0;
+    text-align: center;
+}
+
+#Titulo{
+
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0;   
+}
+
+#cabecalho header a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+#cabecalho header{
+    padding: 0.4%;
+    margin-top: 70px ;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+}
+
+#icon{
+    width: 70%;
+}
+.abnt p {
+    margin-left: 3cm;
+    margin-right: 2cm;
+    display: block;
+    text-indent: 2cm;
+}
+.abnt h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    margin-left: 3cm;
+    margin-right: 2cm;
+    
+}
+
+main{
+    
+    padding-top: 3cm;
+    margin: auto;
+    display: block;
+    width: 50%;
+  }
+
+img{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.referencia{
+    margin: 0;
+    padding: 0;
+    font-size: 10pt;
+}
+.citacao{
+    margin-left: 7cm;
+    font-size: 10pt;
+}
+#Titulo{
+    width: 15%;
+}

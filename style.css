@@ -1,0 +1,46 @@
+
+a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+a:hover{
+    color: rgb(83, 83, 83);
+}
+body{
+    background-color: rgb(248, 248, 240);
+}
+
+h1{
+    margin-top: 15px;
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+#titulo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+#titulo #div1{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: right;
+}
+
+#titulo #div2{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+}
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+.pontos{
+    width: 60%;
+}
