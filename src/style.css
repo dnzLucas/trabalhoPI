@@ -10,28 +10,26 @@ body {
 }
 
 header {
-
-    padding: 50px;
-    margin-top: 70px;
+    background-color: black;
+    padding: 10px;
     text-align: center;
     border: 2px solid black;
-    margin-left: 100px;
-    margin-right: 150px;
 }
 
 #cabecalho header {
-    padding: 0.4%;
-    margin-top: 70px;
     text-align: center;
     border: 2px solid black;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 20px;
+
 }
 
 #cabecalho header a {
+    color: aliceblue;  
     display: inline-block;
     vertical-align: middle;
+}
+
+#cabecalho header a:hover{
+    color: rgb(147, 147, 148);
 }
 
 #icon {
@@ -50,6 +48,9 @@ a:hover {
     color: rgb(83, 83, 83);
 }
 
+header a:hover{
+    color: aquamarine;
+}
 #Titulo {
 
     display: block;
@@ -116,3 +117,4 @@ img {
 *{
     font-size: 1em;
 }
+
