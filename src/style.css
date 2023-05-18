@@ -2,33 +2,28 @@ html,
 body {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(248, 248, 240);
 }
 
+
 header {
+    padding-top: 0.5vw;
+    text-align: center;
     background-color: black;
-    padding: 10px;
-    text-align: center;
-    border: 2px solid black;
+    grid-area: h;
 }
 
-#cabecalho header {
-    text-align: center;
-    border: 2px solid black;
-
-}
-
-#cabecalho header a {
+header a {
     color: aliceblue;  
     display: inline-block;
     vertical-align: middle;
 }
 
-#cabecalho header a:hover{
+header a:hover{
     color: rgb(147, 147, 148);
 }
 
@@ -44,13 +39,34 @@ a {
     font-family: 'Oswald', sans-serif;
 }
 
+
+main {
+    background: rgb(255, 255, 255);
+    grid-area: m;
+    color: black;
+    margin-top: 2vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-top: 5vw;
+}
+
+footer {
+    grid-area: f;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 13vh 77vh 10vh;
+    grid-template-areas: "h h"
+                         "m m"
+                         "f f";
+}
+
 a:hover {
     color: rgb(83, 83, 83);
 }
 
-header a:hover{
-    color: aquamarine;
-}
 #Titulo {
 
     display: block;
@@ -65,7 +81,7 @@ h1 {
     font-family: 'Red Hat Display', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-
+    
 .pontos {
     width: 60%;
 }
@@ -83,14 +99,6 @@ h1 {
     margin-left: 3cm;
     margin-right: 2cm;
 
-}
-
-main {
-    background-color: rgb(255, 255, 255);
-    padding-top: 3cm;
-    margin: auto;
-    display: block;
-    width: 50%;
 }
 
 img {
