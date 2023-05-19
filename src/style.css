@@ -24,7 +24,7 @@ html, body {
     text-decoration: none;
   }
 
-  header a:not      (:last-child) {
+  header a:not(:last-child) {
     margin-right: 10px
   }
   
