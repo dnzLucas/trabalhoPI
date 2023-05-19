@@ -20,12 +20,6 @@ html, body {
     color: aliceblue;
     display: inline-block;
     vertical-align: middle;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-  }
-
-  header a:not(:last-child) {
-    margin-right: 10px
   }
   
   header a:hover {
@@ -34,6 +28,14 @@ html, body {
   
   #icon {
     width: 70%;
+  }
+  
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
   }
   
   main {
@@ -58,9 +60,9 @@ html, body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 12vh 77vh 10vh;
-    grid-template-areas: "h h"
-                         "m m"
-                         "f f";
+    grid-template-areas: "h"
+                         "m"
+                         "f";
   }
   
   a:hover {
@@ -120,7 +122,10 @@ html, body {
     width: 15%;
   }
   
-
+  * {
+    font-size: 1em;
+  }
+  
   /* Media queries para ajustar o layout em diferentes tamanhos de tela */
   
   /* Tamanho de tela pequeno */
@@ -129,7 +134,10 @@ html, body {
       margin-left: 5vw;
       margin-right: 5vw;
     }
-    
+  
+    p {
+      margin: 1.5cm;
+    }
   }
   
   /* Tamanho de tela médio */
@@ -138,7 +146,10 @@ html, body {
       margin-left: 10vw;
       margin-right: 10vw;
     }
-
+  
+    p {
+      margin: 2cm;
+    }
   }
   
   /* Tamanho de tela grande */
@@ -146,5 +157,9 @@ html, body {
     main {
       margin-left: 20vw;
     }
-    
+  
+    p {
+      margin: 3cm 2cm;
+    }
   }
+  
