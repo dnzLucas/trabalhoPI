@@ -20,6 +20,12 @@ html, body {
     color: aliceblue;
     display: inline-block;
     vertical-align: middle;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+  }
+
+  header a:not      (:last-child) {
+    margin-right: 10px
   }
   
   header a:hover {
@@ -28,14 +34,6 @@ html, body {
   
   #icon {
     width: 70%;
-  }
-  
-  a {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: black;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
   }
   
   main {
@@ -122,10 +120,7 @@ html, body {
     width: 15%;
   }
   
-  * {
-    font-size: 1em;
-  }
-  
+
   /* Media queries para ajustar o layout em diferentes tamanhos de tela */
   
   /* Tamanho de tela pequeno */
@@ -134,6 +129,7 @@ html, body {
       margin-left: 5vw;
       margin-right: 5vw;
     }
+    
   }
   
   /* Tamanho de tela médio */
@@ -142,12 +138,13 @@ html, body {
       margin-left: 10vw;
       margin-right: 10vw;
     }
+
   }
   
   /* Tamanho de tela grande */
   @media (min-width: 1024px) {
     main {
       margin-left: 20vw;
-     
     }
-  }  
+    
+  }
