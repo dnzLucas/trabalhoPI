@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-attachment: fixed;
 }
 
 body {
@@ -40,6 +41,7 @@ a {
 }
 
 main {
+
   background: rgb(255, 255, 255);
   grid-area: m;
   color: black;
@@ -117,6 +119,10 @@ img {
 
 #Titulo {
   width: 15%;
+}
+
+.logo{
+  width: 15vw;
 }
 
 /* Media queries para ajustar o layout em diferentes tamanhos de tela */
@@ -202,91 +208,79 @@ img {
     font-size: 0.6em;
   }
 }
-
-ul {
-  list-style: none;
-  padding: 0;
-  overflow: hidden;
-  transition: all;
-}
-
+/* Resto do seu CSS... */
 nav {
-  background-color: #161616;
-  padding: 0 20px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav img,
-nav a {
-  color: #FFF;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-  color: #FFF;
-  font-size: 36px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  display: none;
-}
-
-nav,
-ul {
   display: flex;
-  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
 }
 
-li {
-  padding: 10px 20px;
+li{
+  padding: 20px;
 }
 
-.logo h1 {
-  margin: 0;
+li:hover{
+  background-color: rgba(53, 53, 53, 0.7);
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  height: calc(100vh - 10%);
+  background-color: #161616;
   padding: 10px;
 }
 
-li:hover,
-nav img:hover,
-button:hover {
+#menu-toggle {
+  display: none;
+}
+
+.menu-button {
+  margin: 20px ;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  position: relative;
   cursor: pointer;
-  opacity: 0.8;
-  background-color: rgba(255, 255, 255, 0.7);
+  order: 2; /* Alterar a ordem para colocar no canto direito */
 }
 
-button:focus~ul {
-  height: 200px;
-  
-}
-
-nav,
-ul {
-  flex-direction: column;
-}
-
-ul {
-  text-align: end;
-  margin: 0;
-  height: 0;
-}
-
-nav {
-  padding: 0;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-nav img {
-  margin: 10px;
-}
-
-button {
-  display: flex;
-}
-
-li,
-ul {
+.bar {
+  display: block;
   width: 100%;
+  height: 3px;
+  background-color: #FFF;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
 }
+
+.bar:nth-child(1) {
+  top: 0;
+}
+
+.bar:nth-child(2) {
+  top: 8px;
+}
+
+.bar:nth-child(3) {
+  top: 16px;
+}
+
+#menu-toggle:checked + .menu-button .bar:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+#menu-toggle:checked + .menu-button .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-button .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+#menu-toggle:checked ~ .menu {
+  display: block;
+}
+
