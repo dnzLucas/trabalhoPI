@@ -8,14 +8,17 @@ body {
 }
 
 body {
-  background-image: url(imagens/subtle-prism.svg);
+  background-image: url(imagens/rose-petals.svg);
+}
+
+#fundo1 {
+  background-image: url(imagens/Dark\ Brown\ Desert\ Night\ Sky.png);
 }
 
 header {
   padding-top: 0.5vw;
   text-align: center;
-  background-color: black;
-  grid-area: h;
+  background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.8));  grid-area: h;
 }
 
 header a {
@@ -26,6 +29,16 @@ header a {
 
 #icon {
   width: 70%;
+}
+
+#comme-font {
+  font-size: 2em;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -105,7 +118,7 @@ img {
   width: 15%;
 }
 
-.logo{
+.logo {
   width: 15vw;
 }
 
@@ -192,40 +205,53 @@ img {
     font-size: 0.6em;
   }
 }
+
 nav {
   display: flex;
   position: relative;
   justify-content: space-between;
 }
 
-li{
+li {
   padding: 20px;
   cursor: pointer;
-  list-style: none ;
+  list-style: none;
 }
 
-li:hover{
+li:hover {
   background-color: rgba(53, 53, 53, 0.7);
 }
 
 .menu {
-  display: none;
-  position: absolute;
-  right: 0;
-  height: calc(100vh - 10%);
-  background-color: #161616;
-  padding: 10px;
-  height: 87vh;
   margin-top: 9vh;
 }
 
 #menu-toggle {
   display: none;
 }
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  /* Começa fora da tela */
+  width: 300px;
+  height: 100vh;
+  background-color: #161616;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  /* Adiciona transição suave ao transform */
+}
+
+#menu-toggle:checked~.menu {
+  transform: translateX(-300px);
+  /* Move a navbar para a esquerda */
+}
+
 /* Resto do seu CSS... */
 
 .menu-button {
-  margin: 20px ;
+  margin: 20px;
   display: inline-block;
   width: 30px;
   height: 20px;
@@ -256,19 +282,18 @@ li:hover{
   top: 16px;
 }
 
-#menu-toggle:checked + .menu-button .bar:nth-child(1) {
+#menu-toggle:checked+.menu-button .bar:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
 
-#menu-toggle:checked + .menu-button .bar:nth-child(2) {
+#menu-toggle:checked+.menu-button .bar:nth-child(2) {
   opacity: 0;
 }
 
-#menu-toggle:checked + .menu-button .bar:nth-child(3) {
+#menu-toggle:checked+.menu-button .bar:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-#menu-toggle:checked ~ .menu {
+#menu-toggle:checked~.menu {
   display: block;
 }
-
