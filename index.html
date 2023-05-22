@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="src/imagens/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="src/style.css">
     <title>Arte Contemporânea</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 
 <body>
@@ -24,11 +25,12 @@
                 <span class="bar"></span>
             </label>
             <ul class="menu">
-                <li><a href="pagina2.html">Arte Contemporânea</a></li>
-                <li><a href="pagina3.html">Semana da arte moderna</a></li>
-                <li><a href="pagina4.html">As vanguardas artísticas européias</a></li>
-                <li><a href="pagina5.html">Modernismo</a></li>
-                <li><a href="pagina6.html">Sintaxe da linguagem visual</a></li>
+                <li id="pagina2.html"><a href="pagina2.html">Arte Contemporânea</a></li>
+                <li id="pagina3.html"><a href="pagina3.html">Semana da arte moderna</a></li>
+                <li id="pagina4.html"><a href="pagina4.html">As vanguardas artísticas européias</a></li>
+                <li id="pagina5.html"><a href="pagina5.html">Modernismo</a></li>
+                <li id="pagina6.html"><a href="pagina6.html">Sintaxe da linguagem visual</a></li>
+                <li id="sambaqui.html"><a href="sambaqui.html">sambaqui</a></li>
             </ul>
         </nav>
 
@@ -39,7 +41,12 @@
     </main>
 
 
-
 </body>
+
+<script type="text/javascript">
+     $("li").click(function() {
+           window.open(this.id,"_self");
+        });
+</script>
 
 </html>

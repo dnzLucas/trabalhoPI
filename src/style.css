@@ -24,10 +24,6 @@ header a {
   vertical-align: middle;
 }
 
-header a:hover {
-  color: rgb(147, 147, 148);
-}
-
 #icon {
   width: 70%;
 }
@@ -59,18 +55,6 @@ footer {
   grid-area: f;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 12vh 77vh 10vh;
-  grid-template-areas: "h"
-                       "m"
-                       "f";
-}
-
-a:hover {
-  color: rgb(83, 83, 83);
-}
 
 #Titulo {
   display: block;
@@ -208,7 +192,6 @@ img {
     font-size: 0.6em;
   }
 }
-/* Resto do seu CSS... */
 nav {
   display: flex;
   position: relative;
@@ -217,6 +200,8 @@ nav {
 
 li{
   padding: 20px;
+  cursor: pointer;
+  list-style: none ;
 }
 
 li:hover{
@@ -230,11 +215,14 @@ li:hover{
   height: calc(100vh - 10%);
   background-color: #161616;
   padding: 10px;
+  height: 87vh;
+  margin-top: 9vh;
 }
 
 #menu-toggle {
   display: none;
 }
+/* Resto do seu CSS... */
 
 .menu-button {
   margin: 20px ;
@@ -243,7 +231,7 @@ li:hover{
   height: 20px;
   position: relative;
   cursor: pointer;
-  order: 2; /* Alterar a ordem para colocar no canto direito */
+  order: 2;
 }
 
 .bar {
