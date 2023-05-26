@@ -12,7 +12,7 @@ body {
 }
 
 #fundo1 {
-  background-image: url(imagens/Dark\ Brown\ Desert\ Night\ Sky.png);
+  background-image: url(https://picstatio.com/large/16eaad/landscape-plants-mountains-4k.jpg);
 }
 
 header {
@@ -31,6 +31,20 @@ header a {
   width: 70%;
 }
 
+.introducao{
+  animation: fadeIn 5s;
+  color: #FFF;
+  background-color: #000000;
+  border-radius: 20px;
+  width: 45vw;
+  padding: 10px 50px 10px 50px;
+  text-align: justify;
+  margin: auto;
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
+
 #comme-font {
   font-size: 2em;
   text-align: center;
@@ -40,6 +54,14 @@ header a {
   font-family: 'Red Hat Display', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
+
+#comme-font{ animation: fadeIn 1s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 a {
   padding-left: 10px;
