@@ -1,5 +1,4 @@
-/* Estilos padrão para todos os tamanhos de tela */
-html,
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');html,
 body {
   margin: 0;
   padding: 0;
@@ -31,21 +30,20 @@ header a {
   width: 70%;
 }
 
-.introducao{
-  animation: fadeIn 5s;
+#introducao{
+  align-items: start;
   color: #FFF;
-  background-color: #000000;
-  border-radius: 20px;
-  width: 45vw;
-  padding: 10px 50px 10px 50px;
-  text-align: justify;
-  margin: auto;
-  font-size: 1.3em;
-  line-height: 30px;
 }
 
+#introducao h1{
+  font-size: 2em;
+  font-family: 'Bagel Fat One', cursive;
+  letter-spacing: 2px;
+  
+}
 
 #comme-font {
+  margin: 0;
   font-size: 2em;
   text-align: center;
   color: #FFF;
@@ -56,6 +54,14 @@ header a {
 }
 
 #comme-font{ animation: fadeIn 1s; }
+
+#index {      
+  height: 100vh;
+}
+
+#pagina2 {
+  background-color: blanchedalmond;
+}
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -140,8 +146,8 @@ img {
   width: 15%;
 }
 
-.logo {
-  width: 15vw;
+#logo img {
+  width: 4.5vw;
 }
 
 /* Media queries para ajustar o layout em diferentes tamanhos de tela */
