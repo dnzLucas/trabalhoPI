@@ -6,12 +6,37 @@ body {
   background-attachment: fixed;
 }
 
-body {
-  background-image: url(imagens/rose-petals.svg);
+.fundo2 {
+  background-image: url(imagens/Fundo-Arte-contempôranea.jpeg);
+  background: cover;
+  background-repeat: no-repeat;
+}
+
+.fundo3 {
+  background-image: url(imagens/Fundo-arte-moderna.jpg)
+}
+
+.fundo4 {
+  background-image: url(imagens/Vanguardas.webp)
+}
+
+.fundo5 {
+  background-image: url(imagens/Modernismo.jpg)
+}
+
+.fundo6 {
+  background-image: url(imagens/sintaxe.jpg);
 }
 
 #fundo1 {
-  background-image: url(https://picstatio.com/large/16eaad/landscape-plants-mountains-4k.jpg);
+  background-color: black;
+}
+
+.rato-index {
+  margin-left: 300px;
+  margin-right: -100px; 
+  height: 1000px;
+  width: 1000px;
 }
 
 header {
@@ -90,6 +115,7 @@ main {
 
 #maindiferente {
   background-color: transparent;
+  margin-left: 30px;
 }
 
 footer {
